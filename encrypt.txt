@@ -1,0 +1,9 @@
+p = input("Enter a phrase: ")
+k = int(input("Enter an integer as the key: "))
+
+c = "" ## ciphertext
+
+for i in p:
+  c = c + chr(ord(i)^k)
+
+print(c)

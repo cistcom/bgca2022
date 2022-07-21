@@ -1,0 +1,10 @@
+c = input("Enter the ciphertext: ")
+
+k = int(input("Enter the key: "))
+
+p = ""
+
+for i in c:
+  p = p + chr(ord(i)^k)
+
+print(p)
